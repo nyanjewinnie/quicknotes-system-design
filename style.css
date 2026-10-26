@@ -1,0 +1,95 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+h1,
+h2 {
+    color: #183153;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #2158a5;
+    color: #fff;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin: 24px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font: inherit;
+}
+
+#status {
+    min-height: 1.5em;
+}
+
+#status.success {
+    color: #176b35;
+}
+
+#status.error {
+    color: #b42318;
+}
+
+#notes-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.note {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+.note button {
+    background: #b42318;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 12px;
+        padding: 16px;
+    }
+}
